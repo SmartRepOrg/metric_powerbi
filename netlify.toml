@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/<path-to-access-cors-url>"
+  from = "/https://nwqohp1ofa.execute-api.eu-central-1.amazonaws.com/smartrep-live-count?"
   to = "<cross-origin-url>"
   status = 200
   force = true
