@@ -3,6 +3,7 @@
   [headers.values]
     X-Frame-Options = "ALLOWALL"
     Content-Security-Policy = "frame-ancestors *"
+
 [[redirects]]
   from = "/api/count"
   to = "https://nwqohp1ofa.execute-api.eu-central-1.amazonaws.com/smartrep-live-count"
