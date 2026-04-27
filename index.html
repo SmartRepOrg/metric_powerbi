@@ -38,13 +38,4 @@
         })
         .catch(err => {
           console.error('fetchCount failed:', err);
-          document.getElementById('status').innerText = '⚠️ ' + err.message;
-        });
-    }
-    fetchCount();
-    setInterval(fetchCount, 1000);
-  </script>
-</body>
-</html>
-fetch('/api/count?' + Date.now(), { cache: 'no-store' })
-
+          document.get
