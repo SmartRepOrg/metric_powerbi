@@ -1,10 +1,10 @@
-[[redirects]]
-  from = "/https://nwqohp1ofa.execute-api.eu-central-1.amazonaws.com/smartrep-live-count?"
-  to = "<cross-origin-url>"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
 [[headers]]
   for = "/*"
   [headers.values]
-    Access-Control-Allow-Origin = "*"
+    X-Frame-Options = "ALLOWALL"
+    Content-Security-Policy = "frame-ancestors *"
+[[redirects]]
+  from = "/api/count"
+  to = "https://nwqohp1ofa.execute-api.eu-central-1.amazonaws.com/smartrep-live-count"
+  status = 200
+  force = true

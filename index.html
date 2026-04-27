@@ -27,7 +27,7 @@
   </div>
   <script>
     function fetchCount() {
-      fetch('https://nwqohp1ofa.execute-api.eu-central-1.amazonaws.com/smartrep-live-count?' + Date.now(), { cache: 'no-store' })
+      fetch('/api/count?' + Date.now(), { cache: 'no-store' })
         .then(r => {
           if (!r.ok) throw new Error('HTTP ' + r.status);
           return r.json();
@@ -46,3 +46,5 @@
   </script>
 </body>
 </html>
+fetch('/api/count?' + Date.now(), { cache: 'no-store' })
+
